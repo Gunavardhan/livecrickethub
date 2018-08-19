@@ -26,13 +26,13 @@ public class LiveCricketService {
 			System.out.println("PlayerId Should not be null or empty");
 			response.setErrorCode("001");
 			response.setErrorMessage("PlayerId Should not be null or empty");
-			return Response.status(200).entity(response).build();
+			return Response.status(500).entity(response).build();
 		}
 		if(player.getMobile() == null || player.getMobile().isEmpty()){
 			System.out.println("Player Mobile Should not be null or empty");
 			response.setErrorCode("002");
 			response.setErrorMessage("Player Mobile Should not be null or empty");
-			return Response.status(200).entity(response).build();
+			return Response.status(500).entity(response).build();
 		}
 		
 		try{
