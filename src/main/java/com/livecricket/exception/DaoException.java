@@ -7,6 +7,7 @@ public class DaoException extends RuntimeException{
 	private String message;
 	
 	public DaoException(String reasonCode, String reason, String message){
+		super(message);
 		this.reasonCode = reasonCode;
 		this.reason = reason;
 		this.message = message;
